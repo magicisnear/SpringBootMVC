@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Car</title>
+</head>
+<body>
+<form th:method="PATCH" th:action="@{/cars/{id}(id=${car.getId()})}" th:object="${car}">
+    <label for="model">Enter model: </label>
+    <input type="text" th:field="*{model}" id="model"/>
+
+    <br>
+
+    <label for="series">Enter series: </label>
+    <input type="text" th:field="*{series}" id="series"/>
+
+    <br>
+
+    <input type="submit" value="Update car"/>
+
+</form>
+</body>
+</html>

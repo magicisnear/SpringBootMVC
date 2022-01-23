@@ -1,0 +1,7 @@
+hiber\service\CarServiceImpl.class
+hiber\config\WebConfig.class
+hiber\model\Car.class
+hiber\controllers\CarController.class
+hiber\service\CarService.class
+hiber\config\AppConfig.class
+hiber\config\AppInit.class

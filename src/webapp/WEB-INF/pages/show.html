@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car</title>
+</head>
+<body>
+<p th:text="${car.getModel()}">Model</p>
+<p th:text="${car.getSeries()}">Series</p>
+
+<a th:href="@{/car/{id}/edit(id=${car.getId()})}">Изменить машину</a>
+</body>
+</html>
