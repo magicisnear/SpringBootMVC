@@ -8,7 +8,12 @@
 <body>
 <div th:each="car : ${carList}">
     <a th:href="@{/cars/{id}(id=${car.getId()})}" th:text="${car.getModel()}">car</a>
+
 </div>
+
+<br>
+
+<a th:href="@{/cars/new}">Создать машину</a>
 </body>
 </html>
 

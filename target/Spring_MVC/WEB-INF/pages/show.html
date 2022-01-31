@@ -10,5 +10,7 @@
 <p th:text="${car.getSeries()}">Series</p>
 
 <a th:href="@{/cars/{id}/edit(id=${car.getId()})}">Изменить машину</a>
+<br>
+<a th:href="@{/cars/{id}/delete(id=${car.getId()})}">Удалить машину</a>
 </body>
 </html>

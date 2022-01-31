@@ -31,7 +31,7 @@ public class CarDaoImpl implements CarDao {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(long id) {
         Car car = em.find(Car.class, id);
         em.remove(car);
     }

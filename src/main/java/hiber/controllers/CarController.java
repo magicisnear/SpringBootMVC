@@ -62,4 +62,16 @@ public class CarController {
         return "redirect:/cars";
     }
 
+    @GetMapping("/cars/{id}/delete")
+    public String delete(Model model, @PathVariable("id") int id) {
+        model.addAttribute("car", carService.findOne(id));
+        return "delete";
+    }
+
+    @DeleteMapping("/cars/{id}")
+    public String deleteCar(@PathVariable("id") int id) {
+        carService.delete(id);
+        return "redirect:/cars";
+    }
+
 }

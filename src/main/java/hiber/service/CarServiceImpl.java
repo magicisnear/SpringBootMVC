@@ -23,7 +23,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     @Transactional
-    public void delete(int id) {
+    public void delete(long id) {
         cardao.delete(id);
     }
 
