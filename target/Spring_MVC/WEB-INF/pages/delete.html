@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Page</title>
+</head>
+<body>
+
+<form th:method="DELETE" th:action="@{/cars/{id}(id=${car.getId()})}" th:object="${car}">
+
+    <label for="id"> Enter id </label>
+    <input type="text" th:field="*{id}" id="id"/>
+    <br>
+
+    <input type="submit" value="Delete car"/>
+
+</form>
+
+</body>
+</html>
